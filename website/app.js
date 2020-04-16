@@ -29,7 +29,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>fend/README.md at refresh-2019 · udacity/fend</title>
+  <title>fend/app.js at refresh-2019 · udacity/fend</title>
     <meta name="description" content="General Front End Nanodegree Content Resources. Contribute to udacity/fend development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -39,10 +39,10 @@
     <meta property="og:image" content="https://avatars1.githubusercontent.com/u/1916665?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="udacity/fend" /><meta property="og:url" content="https://github.com/udacity/fend" /><meta property="og:description" content="General Front End Nanodegree Content Resources. Contribute to udacity/fend development by creating an account on GitHub." />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NTIzNjk5Nzk1OmJlMDY3ZDlmNWM5ZWU4ZmIzODcyOTViZWJkYTY3NmViOTJjMGM2OGZjNjM5NjY3ZTA4NDI2NDliYzdkMGQ5M2M=--6bef69f38d046d795e1d6a5e3cf9c46fd751a08b">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NTIzNjk5Nzk1Ojc3MGNlZTU3NWMyZmY5NGI0YzBmMmQ5MmRjZWYxOTNhYWZlOWM5NWE0OWYzYmNiOTkwOTAzOTBhNjM2ODU4ZWM=--fc76c27c43bd9a9706ed975d438cd04fd80c4007">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="C5B2:E2F8:F5FC2:154AA2:5E987C88" data-pjax-transient="true" /><meta name="html-safe-nonce" content="801ed7eb005b73c8e0aa79c1e6f02a3d2a75f6b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS91ZGFjaXR5L2ZlbmQvdHJlZS9yZWZyZXNoLTIwMTkvcHJvamVjdHMvd2VhdGhlci1qb3VybmFsLWFwcCIsInJlcXVlc3RfaWQiOiJDNUIyOkUyRjg6RjVGQzI6MTU0QUEyOjVFOTg3Qzg4IiwidmlzaXRvcl9pZCI6IjQ5OTQ0MDk0NzM0MjkwODIzNjUiLCJyZWdpb25fZWRnZSI6ImFtcyIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="d8057bc4282876a29af6a03c70a4f41f38dbf45e5d088e427ec725ee1f5fb8ed" data-pjax-transient="true" />
+  <meta name="request-id" content="C5B2:E2F8:F570A:1540B1:5E987C48" data-pjax-transient="true" /><meta name="html-safe-nonce" content="801ed7eb005b73c8e0aa79c1e6f02a3d2a75f6b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS91ZGFjaXR5L2ZlbmQvdHJlZS9yZWZyZXNoLTIwMTkvcHJvamVjdHMvd2VhdGhlci1qb3VybmFsLWFwcC93ZWJzaXRlIiwicmVxdWVzdF9pZCI6IkM1QjI6RTJGODpGNTcwQToxNTQwQjE6NUU5ODdDNDgiLCJ2aXNpdG9yX2lkIjoiNDk5NDQwOTQ3MzQyOTA4MjM2NSIsInJlZ2lvbl9lZGdlIjoiYW1zIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true" /><meta name="visitor-hmac" content="c65f2ad6a2f6375ef3362016c79af1008b04d126133ae73dfcefda24cce8a12b" data-pjax-transient="true" />
 
 
 
@@ -76,7 +76,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="MjQ3OWJjNDI4YTE5YTc3MTM1NTEwNmQ0NjQ1MWQ5MmI3MDdhNmRkMGU2M2IzNmIxYWU2NmEyMzRkYjY4NDFhMnx7InJlbW90ZV9hZGRyZXNzIjoiODUuMjMuMTkxLjM1IiwicmVxdWVzdF9pZCI6IkM1QjI6RTJGODpGNUZDMjoxNTRBQTI6NUU5ODdDODgiLCJ0aW1lc3RhbXAiOjE1ODcwNTE2NzIsImhvc3QiOiJnaXRodWIuY29tIn0=">
+      <meta name="js-proxy-site-detection-payload" content="MGVlYWM5MTVmYWIxOTY0ZDU5Y2JhMDIwMzI5Mzk0MTMxOWI1MmM5ZDhiN2Q5ZjQ3MmExYjUwODAxOTNkY2EwNXx7InJlbW90ZV9hZGRyZXNzIjoiODUuMjMuMTkxLjM1IiwicmVxdWVzdF9pZCI6IkM1QjI6RTJGODpGNTcwQToxNTQwQjE6NUU5ODdDNDgiLCJ0aW1lc3RhbXAiOjE1ODcwNTE2MDEsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES,GHE_CLOUD_TRIAL,PAGE_STALE_CHECK">
 
@@ -90,7 +90,7 @@
   <meta name="octolytics-dimension-user_id" content="1916665" /><meta name="octolytics-dimension-user_login" content="udacity" /><meta name="octolytics-dimension-repository_id" content="51965062" /><meta name="octolytics-dimension-repository_nwo" content="udacity/fend" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="51965062" /><meta name="octolytics-dimension-repository_network_root_nwo" content="udacity/fend" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -165,7 +165,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" value="zIeDojkpHLeB72wWlaPXa2AqMcRY0zqq8vJIInrUa36sJhKz55rCLYKOfwJgI9iAH9EG4ihtiOMmTHl3D0oubg==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="TIzzmyJAcgDu84pLaZgiki9vP2Fdm7nksQ0VnepmXgUsLWKK/POsmu2SmV+cGC15UJQIRy0lC61lsyTIn/gbFQ==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -316,7 +316,7 @@
       <img class="avatar" height="20" width="20" alt="@lrybakova" src="https://avatars3.githubusercontent.com/u/63198490?s=60&amp;v=4" />
       lrybakova
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="hZ1IBekXN7wawvST7cAT4mqG3t5HAufZioko0bV7ROB1ZOo7fdstjRy+IPAh2xmv6x9B/NJYWjaUkUdD/Gy/0Q==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="8bqRMDzv4PQrnXJSkFLNljJEipOj5/HSZ50otcyyMQkBQzMOqCP6xS3hpjFcScfbs90VsTa9TD15hUcnhaXKOA==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 17" version="1.1" width="16" height="17" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"></path></svg>
         Sign out
@@ -410,7 +410,7 @@
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:1916665,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:63198490,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;}}" data-hydro-click-hmac="2a5b7cddbd832247e76e85ea2ce744e25c563546bf3b300cf33acac9e1976765">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:1916665,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:63198490,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;}}" data-hydro-click-hmac="ddaf66e9d7b2f6b1e507c388dddd9b575d47e8b4136bc270f84a10c466c2cccb">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -437,7 +437,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="456va0sicQYr08MU+Q1h2hkZu1I2BpwbfrzI4+RHorpbk/UWZmkzFzLzF/qD7A604z6M1AHMTSg3t2fuQfjiig==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="WdH8/XXfZjtDpb/95+lTRN93bU3Hmjk0obgLap4jakPh3KaAWJQkKlqFaxOdCDwqJVBay/BQ6Afos6RnO5wqcw==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
@@ -555,17 +555,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-04-16T19:11:12+03:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-04-16T19:10:01+03:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-04-16T19:41:12+03:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-04-16T19:40:01+03:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-04-16T22:41:12+03:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-04-16T22:40:01+03:00">
             in 4 hours
           </button>
         </li>
@@ -622,10 +622,10 @@
     class="dropdown-item btn-link"
     role="menuitem"
     data-feature-preview-trigger-url="/users/lrybakova/feature_previews"
-    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}"
-    data-feature-preview-close-hmac="abaa17cbceb2f308391c69df567618aa45ea6513b1d728a0f3af3c04ea4d9b9b"
-    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}"
-    data-hydro-click-hmac="9c56aa7fa90e802da6f737f3f86ca08e701b0fe15c3ce8fdac8786851e65c6c5"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}"
+    data-feature-preview-close-hmac="fcb625f2d016fa6553f7c245caf00c4225095bd5ea4f070dca991b968ff6ed27"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}"
+    data-hydro-click-hmac="93505536eb1d33007451824f7550fc677746898aa010b377ab7972d574e15503"
   >
     Feature preview
   </button>
@@ -634,12 +634,12 @@
 
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="v07O+O2eAgAYwxIULtHX5J1r5XTxo1BSw6oqmVuhVkFPt2zGeVIYMR6/xnfiyt2pHPJ6VmT57b3dskULEratcA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="28izJYvPP3FnQLNM1nZouJB41DsRUa3FRkrrpefYtJcrMREbHwMlQGE8Zy8abWL1EeFLGYQLECpYUoQ3rs9Ppg==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
       </button>
-      <input type="text" name="required_field_addf" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1587051672600" class="form-control" /><input type="hidden" name="timestamp_secret" value="038ee9f545bcaa461d45773743aee9b4ab876c34a510eae54c9306458c7a3e59" class="form-control" />
+      <input type="text" name="required_field_b78b" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1587051601950" class="form-control" /><input type="hidden" name="timestamp_secret" value="0eada63df760e1ec6f8ec90d2f8e616ee11bde85d7839cd46987862c81754c49" class="form-control" />
 </form>  </details-menu>
 </details>
 
@@ -730,10 +730,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="UJZNhb+QmNxrE3e8aseWpe5UfFnGFPMXN7afnUZwhi2RUjLoIreVPsa0/G4xJRU7uX4gKj46t5/n0huHhPKf/A==" />      <input type="hidden" name="repository_id" value="51965062">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="KGsz6MLoddidjIqCIh5PQf6aOfVNDoFyajbkmvCwPVHpr0yFX894OjArAVB5/MzfqbBlhrUgxfq6UmCAMjIkgA==" />      <input type="hidden" name="repository_id" value="51965062">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="30f34e4dc11e53443eb269ccebfc78bc59c4f3aec81dbbdd7c6fa64a77c03024" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="deb2bbf763724c825e9cfed593738b8e1d66da440bfc5827177ea29103e8aa61" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
               Watch
           </span>
@@ -804,9 +804,9 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <form class="starred js-social-form" action="/udacity/fend/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ocp3ZipmZciKKCSrCMXibYsjRtRJou80PvUhVTogkroITyasyZitUqV/88VfbNwTswB0E2Vo38hx5+D84Ll0Hw==" />
+    <form class="starred js-social-form" action="/udacity/fend/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="rKge/xx2CB3muaOt0e2ORNPXXnVlafYgzX4nDSTPSqSdLU81/4jAh8nudMOGRLA66/RsskmjxtyCbOak/lasAQ==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar udacity/fend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="8e33606bab49aaa319eaebec8fac55b5d8048b03acf9bded01d49785b8b17f10" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar udacity/fend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="b7544420b73c2d7d04f7d923d055362b1e4a5c5e54e819f62b444d62f33f3c99" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
 
         Unstar
 </button>        <a class="social-count js-social-count" href="/udacity/fend/stargazers"
@@ -814,9 +814,9 @@
            44
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/udacity/fend/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="0kxQNXb72F0InDoqDlrCt3IfzVtKw7h5s8aRWbTmu36iT5ZASKud/OEDL2w5MwleR2YfNmBVnkRyKYdKdN7zpQ==" />
+    <form class="unstarred js-social-form" action="/udacity/fend/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wXO/gwN8dWSr52ok69j+9SZcuXd6Ebw1PirSkufs5vuxcHn2PSwwxUJ4f2LcsTUcEyVrGlCHmgj/xcSBJ9SuIA==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star udacity/fend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="ad9a93766f2d97045b5d663b8c898202e42742b9c2bd02989edabf0e9debadd5" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star udacity/fend" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="5d2477d26550db09393537bad7da346245393c2836cd1e8c8fed06298ab9a440" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
 
         Star
 </button>        <a class="social-count js-social-count" href="/udacity/fend/stargazers"
@@ -828,8 +828,8 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/udacity/fend/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Pg0b/UZuvPO61iJUQtS6GNtDUburIJ0mVc+h+Qn4/s1aDAGkJCnFVsBJ7FT39tRAG61GCyzpLIIbT9tOq00UaQ==" />
-            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="24bf1c28edb92c2a43be38d011e5aacce701538827fc9137f1449ea6b6bda23a" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of udacity/fend to your account" aria-label="Fork your own copy of udacity/fend to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/udacity/fend/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="pWtSGOO6vLgG4XkpqNxnVuI1HBgL7TqdnAKkwCcz8rXBakhBgf3FHXx+tykd/gkOItsLqIwkiznSgt53hYYYEQ==" />
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:51965062,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="7c333fd49b8c917cc371cfa1e24fbbb63fda21fc178439c455eb7a533f91e627" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of udacity/fend to your account" aria-label="Fork your own copy of udacity/fend to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
               Fork
 </button></form>
     <a href="/udacity/fend/network/members" class="social-count"
@@ -975,9 +975,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/udacity/fend/blob/03b1d70681aaa46f6a9c8f8788978356a9083d1d/projects/weather-journal-app/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/udacity/fend/blob/03b1d70681aaa46f6a9c8f8788978356a9083d1d/projects/weather-journal-app/website/app.js">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v22:986a90baad79f0b4094d8adeed192d99 -->
+    <!-- blob contrib key: blob_contributors:v22:e010a1c2d6c5b6b0e6adbc84b1fd3bf0 -->
     
 
     <div class="d-flex flex-items-start flex-shrink-0 flex-column flex-md-row pb-3">
@@ -992,7 +992,7 @@
     <span class="dropdown-caret"></span>
   </summary>
 
-  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/udacity/fend/refs/refresh-2019/projects/weather-journal-app/README.md?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/udacity/fend/refs/refresh-2019/projects/weather-journal-app/website/app.js?source_action=show&amp;source_controller=blob" preload>
     <div class="SelectMenu-modal">
       <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
         <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"></path></svg>
@@ -1008,13 +1008,53 @@
                 data-hotkey="t">
             Find file
           </a>
-          <clipboard-copy value="projects/weather-journal-app/README.md" class="btn btn-sm BtnGroup-item">
+          <clipboard-copy value="projects/weather-journal-app/website/app.js" class="btn btn-sm BtnGroup-item">
             Copy path
           </clipboard-copy>
         </div>
       </span>
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019"><span>fend</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019/projects"><span>projects</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019/projects/weather-journal-app"><span>weather-journal-app</span></a></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019"><span>fend</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019/projects"><span>projects</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019/projects/weather-journal-app"><span>weather-journal-app</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/udacity/fend/tree/refresh-2019/projects/weather-journal-app/website"><span>website</span></a></span><span class="separator">/</span><strong class="final-path">app.js</strong>
+          <span class="separator">/</span><details class="details-reset details-overlay d-inline" id="jumpto-symbol-select-menu">
+  <summary class="btn-link link-gray css-truncate" aria-haspopup="true" data-hotkey="r" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_blob_definitions&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_blob_definitions&quot;,&quot;repository_id&quot;:51965062,&quot;ref&quot;:&quot;refresh-2019&quot;,&quot;language&quot;:&quot;JavaScript&quot;,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}" data-hydro-click-hmac="a40bd6f9fe7630290fe1702b8781593b56bbf7fd1d4aeaaacd95b81315d8caf3">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+    <span data-menu-button>Jump to</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" role="menu">
+    <div class="SelectMenu-modal">
+      <header class="SelectMenu-header">
+        <span class="SelectMenu-title">Code definitions</span>
+        <button class="SelectMenu-closeButton" type="button" data-toggle-for="jumpto-symbol-select-menu">
+          <svg aria-label="Close menu" class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+        </button>
+      </header>
+        <div class="SelectMenu-filter">
+          <input
+            class="SelectMenu-input form-control js-filterable-field"
+            id="jumpto-symbols-filter-field"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            autofocus
+            placeholder="Filter definitions"
+            aria-label="Filter definitions">
+        </div>
+      <div class="SelectMenu-list">
+        <div data-filterable-for="jumpto-symbols-filter-field" data-filterable-type="substring">
+          
+        </div>
+      </div>
+      <footer class="SelectMenu-footer">
+        <div class="d-flex flex-justify-between">
+          Code navigation index up-to-date
+          <svg class="octicon octicon-primitive-dot text-green" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"></path></svg>
+        </div>
+      </footer>
+    </div>
+  </details-menu>
+</details>
+
       </h2>
 
       <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
@@ -1024,7 +1064,7 @@
               data-hotkey="t">
           Find file
         </a>
-        <clipboard-copy value="projects/weather-journal-app/README.md" class="btn btn-sm BtnGroup-item">
+        <clipboard-copy value="projects/weather-journal-app/website/app.js" class="btn btn-sm BtnGroup-item">
           Copy path
         </clipboard-copy>
       </div>
@@ -1032,45 +1072,16 @@
 
 
 
-    
-  <div class="Box Box--condensed d-flex flex-column flex-shrink-0 mb-3">
-      <div class="Box-body d-flex flex-justify-between bg-blue-light flex-column flex-md-row flex-items-start flex-md-items-center">
-        <span class="pr-md-4 f6">
-          <a rel="contributor" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/mvirgo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mvirgo"><img class="avatar" src="https://avatars3.githubusercontent.com/u/21979084?s=40&amp;v=4" width="20" height="20" alt="@mvirgo" /></a>
-          <a class="text-bold link-gray-dark lh-default v-align-middle" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/mvirgo/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mvirgo">mvirgo</a>
-            <span class="lh-default v-align-middle">
-              <a data-pjax="true" title="feat: 2019 refresh code" class="link-gray" href="/udacity/fend/commit/5ab34f3cb1f5f0c55676b34c9c9e99ff9fcc20a1">feat: 2019 refresh code</a>
-            </span>
-        </span>
-        <span class="d-inline-block flex-shrink-0 v-align-bottom f6 mt-2 mt-md-0">
-          <a class="pr-2 text-mono link-gray" href="/udacity/fend/commit/5ab34f3cb1f5f0c55676b34c9c9e99ff9fcc20a1" data-pjax>5ab34f3</a>
-          <relative-time datetime="2019-08-20T21:55:14Z" class="no-wrap">Aug 20, 2019</relative-time>
-        </span>
+    <include-fragment src="/udacity/fend/contributors/refresh-2019/projects/weather-journal-app/website/app.js" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
       </div>
 
-    <div class="Box-body d-flex flex-items-center flex-auto f6 border-bottom-0 flex-wrap" >
-      <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
-        <summary class="btn-link">
-          <span><strong>1</strong> contributor</span>
-        </summary>
-        <details-dialog
-          class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-          aria-label="Users who have contributed to this file"
-          src="/udacity/fend/contributors-list/refresh-2019/projects/weather-journal-app/README.md" preload>
-          <div class="Box-header">
-            <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-              <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
-            </button>
-            <h3 class="Box-title">
-              Users who have contributed to this file
-            </h3>
-          </div>
-          <include-fragment class="octocat-spinner my-3" aria-label="Loading..."></include-fragment>
-        </details-dialog>
-      </details>
-    </div>
-  </div>
-
+      <div class="Box-body d-flex flex-items-center" >
+        <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
 
 
 
@@ -1082,36 +1093,36 @@
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
 
-      10 lines (7 sloc)
+      5 lines (4 sloc)
       <span class="file-info-divider"></span>
-    596 Bytes
+    159 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/udacity/fend/raw/refresh-2019/projects/weather-journal-app/README.md">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/udacity/fend/blame/refresh-2019/projects/weather-journal-app/README.md">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/udacity/fend/commits/refresh-2019/projects/weather-journal-app/README.md">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/udacity/fend/raw/refresh-2019/projects/weather-journal-app/website/app.js">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/udacity/fend/blame/refresh-2019/projects/weather-journal-app/website/app.js">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/udacity/fend/commits/refresh-2019/projects/weather-journal-app/website/app.js">History</a>
     </div>
 
 
     <div>
           <a class="btn-octicon tooltipped tooltipped-nw js-remove-unless-platform"
              data-platforms="windows,mac"
-             href="x-github-client://openRepo/https://github.com/udacity/fend?branch=refresh-2019&amp;filepath=projects%2Fweather-journal-app%2FREADME.md"
+             href="x-github-client://openRepo/https://github.com/udacity/fend?branch=refresh-2019&amp;filepath=projects%2Fweather-journal-app%2Fwebsite%2Fapp.js"
              aria-label="Open this file in GitHub Desktop"
              data-ga-click="Repository, open with desktop">
               <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/udacity/fend/edit/refresh-2019/projects/weather-journal-app/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="uvNcrqYtSyN/Gbl92SZRDk43iNQ/ug+8SB8pRkdf8kR39AvCy9bZrJyAbxvLpk/qaOjlZFhUh3bv/lHj0GQmtA==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/udacity/fend/edit/refresh-2019/projects/weather-journal-app/website/app.js" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="4XxBpbD19yUWw7+M11YCM+J/Fek9/axoxTuIsAoO2ecrlJAT5CnJ6m/k0GUcXl/zDcHm7jNidDX9HVZEhWCOSA==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 011.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/udacity/fend/delete/refresh-2019/projects/weather-journal-app/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="i3Ad8By5frsFXX8ECaSlyi9utK1SXB0kvIv7Ydc/cnas8+m50aq/gYDgBXzmu9QAOKoH3XVCnd0uOXjPqTkXnw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/udacity/fend/delete/refresh-2019/projects/weather-journal-app/website/app.js" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FhmW6UttGQbz4rlkPBU48XDibeXHrYM0A/r0BYS1r2gDt1SgclnWCFOuve3EkJezmPBuVw6m744ISD3n1FfRhQ==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"></path></svg>
@@ -1123,15 +1134,55 @@
 
 
       
-  <div id="readme" class="Box-body readme blob js-code-block-container px-5">
-    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-weather-journal-app-project" class="anchor" aria-hidden="true" href="#weather-journal-app-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Weather-Journal App Project</h1>
-<h2><a id="user-content-overview" class="anchor" aria-hidden="true" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
-<p>This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.</p>
-<h2><a id="user-content-instructions" class="anchor" aria-hidden="true" href="#instructions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions</h2>
-<p>This will require modifying the <code>server.js</code> file and the <code>website/app.js</code> file. You can see <code>index.html</code> for element references, and once you are finished with the project steps, you can use <code>style.css</code> to style your application to customized perfection.</p>
-<h2><a id="user-content-extras" class="anchor" aria-hidden="true" href="#extras"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extras</h2>
-<p>If you are interested in testing your code as you go, you can use <code>tests.js</code> as a template for writing and running some basic tests for your code.</p>
-</article>
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-c>/* Global Variables */</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-c>// Create a new date instance dynamically with JS</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class=pl-k>let</span> <span class=pl-s1>d</span> <span class=pl-c1>=</span> <span class=pl-k>new</span> <span class=pl-v>Date</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class=pl-k>let</span> <span class=pl-s1>newDate</span> <span class=pl-c1>=</span> <span class=pl-s1>d</span><span class=pl-kos>.</span><span class=pl-en>getMonth</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-c1>+</span><span class=pl-s>&#39;.&#39;</span><span class=pl-c1>+</span> <span class=pl-s1>d</span><span class=pl-kos>.</span><span class=pl-en>getDate</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-c1>+</span><span class=pl-s>&#39;.&#39;</span><span class=pl-c1>+</span> <span class=pl-s1>d</span><span class=pl-kos>.</span><span class=pl-en>getFullYear</span><span class=pl-kos>(</span><span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/udacity/fend/blame/03b1d70681aaa46f6a9c8f8788978356a9083d1d/projects/weather-journal-app/website/app.js">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/udacity/fend/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
   </div>
 
     </div>
@@ -1151,10 +1202,10 @@
      hidden
      data-tagsearch-url="/udacity/fend/find-symbols"
      data-tagsearch-ref="refresh-2019"
-     data-tagsearch-path="projects/weather-journal-app/README.md"
-     data-tagsearch-lang="Markdown"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:51965062,&quot;ref&quot;:&quot;refresh-2019&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md&quot;,&quot;user_id&quot;:63198490}}"
-     data-hydro-click-hmac="9f17238042f9dae79dc7925eff5afa91d9f6f7e589143fc39614f1139ed0df5f">
+     data-tagsearch-path="projects/weather-journal-app/website/app.js"
+     data-tagsearch-lang="JavaScript"
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:51965062,&quot;ref&quot;:&quot;refresh-2019&quot;,&quot;language&quot;:&quot;JavaScript&quot;,&quot;originating_url&quot;:&quot;https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/website/app.js&quot;,&quot;user_id&quot;:63198490}}"
+     data-hydro-click-hmac="56fdf9bcd6545adb739f542d32ecde82595855c7eadc6de5438d1d33b29cbe8d">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box box-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
