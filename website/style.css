@@ -10,10 +10,10 @@ body {
   background-attachment: fixed;
   background: linear-gradient(
     to bottom right,
-    #dff7bd,
-    #40f2ec,
-    #add2ed,
-    #ffb2ff
+    #def7bc,
+    #41f0ea,
+    #acd3f0,
+    #fdb1fd
   ) !important;
 }
 
